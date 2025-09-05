@@ -20,6 +20,8 @@
           <th>G</th>
           <th>A</th>
           <th>PTS</th>
+          <th>Hits</th>
+          <th>SOG</th>
         </tr>
       </thead>
       <tbody></tbody>
@@ -61,6 +63,8 @@
             <td>${season.goals}</td>
             <td>${season.assists}</td>
             <td>${season.points}</td>
+            <td>${season.hits}</td>
+            <td>${season.sog}</td>
           `;
           tbody.appendChild(row);
 
@@ -68,6 +72,8 @@
           totalGoals += season.goals;
           totalAssists += season.assists;
           totalPoints += season.points;
+          totalHits += season.hits
+          totalSog += season.sog
         });
 
         // Add totals row
@@ -79,6 +85,8 @@
           <td><b>${totalGoals}</b></td>
           <td><b>${totalAssists}</b></td>
           <td><b>${totalPoints}</b></td>
+          <td><b>${totalHits}</b></td>
+          <td><b>${toalSog}</b></td>
         `;
         tbody.appendChild(totalsRow);
 
