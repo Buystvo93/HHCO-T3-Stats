@@ -8,7 +8,6 @@
 <body>
   <div class="player-card">
     <h1 id="name"></h1>
-    <p><b>Team:</b> <span id="team"></span></p>
 
     <h2>Season by Season Stats</h2>
     <table id="statsTable">
@@ -45,13 +44,11 @@
 
         // Fill basic info
         document.getElementById("name").textContent = player.name;
-        document.getElementById("team").textContent = player.team;
-        document.getElementById("position").textContent = player.position;
 
         const tbody = document.querySelector("#statsTable tbody");
 
         // Track totals
-        let totalGames = 0, totalGoals = 0, totalAssists = 0, totalPoints = 0;
+        let totalGames = 0, totalGoals = 0, totalAssists = 0, totalPoints = 0, totalHits = 0, totalSog = 0;
 
         // Add each season row
         player.seasons.forEach(season => {
