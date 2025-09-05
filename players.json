@@ -3,7 +3,7 @@
     "id": "1",
     "name": "J_oblo",
     "seasons": [
-      { "year": "S24", "games": 33, "goals": 62, "assists": 38, "points": 100, "hits": 1043, "sog": 226 }
+      { "year": "S24", "games": 33, "goals": 62, "assists": 38, "points": 100, "hits": 1043, "sog": 226 },
       { "year": "S25", "games": 27, "goals": 41, "assists": 27, "points": 68, "hits": 1072, "sog": 166 }
     ]
   }
