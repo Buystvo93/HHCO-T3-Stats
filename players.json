@@ -1,24 +1,9 @@
 [
   {
     "id": "1",
-    "name": "Connor McDavid",
-    "team": "Edmonton Oilers",
-    "position": "Center",
+    "name": "J_oblo",
     "seasons": [
-      { "year": "2022-23", "games": 82, "goals": 64, "assists": 89, "points": 153 },
-      { "year": "2021-22", "games": 80, "goals": 44, "assists": 79, "points": 123 },
-      { "year": "2020-21", "games": 56, "goals": 33, "assists": 72, "points": 105 }
+      { "year": "S25", "games": 27, "goals": 41, "assists": 27, "points": 68, "hits": 1072, "SOG": 166},
     ]
   },
-  {
-    "id": "2",
-    "name": "Auston Matthews",
-    "team": "Toronto Maple Leafs",
-    "position": "Center",
-    "seasons": [
-      { "year": "2022-23", "games": 74, "goals": 40, "assists": 45, "points": 85 },
-      { "year": "2021-22", "games": 73, "goals": 60, "assists": 46, "points": 106 },
-      { "year": "2020-21", "games": 52, "goals": 41, "assists": 25, "points": 66 }
-    ]
-  }
 ]
