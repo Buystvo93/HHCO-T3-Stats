@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Player Profile</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 id="name"></h1>
-  <p><b>Team:</b> <span id="team"></span></p>
-  <p><b>Position:</b> <span id="position"></span></p>
-  <p><b>Goals:</b> <span id="goals"></span></p>
-  <p><b>Assists:</b> <span id="assists"></span></p>
-
+  <div class="player-card">
+   <h1 id="name"></h1>
+   <p><b>Team:</b> <span id="team"></span></p>
+   <p><b>Position:</b> <span id="position"></span></p>
+   <p><b>Goals:</b> <span id="goals"></span></p>
+   <p><b>Assists:</b> <span id="assists"></span></p>
+  </div>
   <script>
     async function loadPlayer() {
       const params = new URLSearchParams(window.location.search);
