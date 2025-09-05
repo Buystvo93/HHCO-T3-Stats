@@ -27,37 +27,61 @@
   </div>
 
   <script>
-    async function loadPlayer() {
-      const params = new URLSearchParams(window.location.search);
-      const playerId = params.get("id");
+ <script>
+  async function loadPlayer() {
+    const params = new URLSearchParams(window.location.search);
+    const playerId = params.get("id");
 
-      const res = await fetch("players.json");
-      const players = await res.json();
+    const res = await fetch("players.json");
+    const players = await res.json();
 
-      const player = players.find(p => p.id === playerId);
-      if (!player) {
-        document.body.innerHTML = "<h2>Player not found</h2>";
-        return;
-      }
-
-      document.getElementById("name").textContent = player.name;
-      document.getElementById("team").textContent = player.team;
-      document.getElementById("position").textContent = player.position;
-
-      const tbody = document.querySelector("#statsTable tbody");
-      player.seasons.forEach(season => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-          <td>${season.year}</td>
-          <td>${season.games}</td>
-          <td>${season.goals}</td>
-          <td>${season.assists}</td>
-          <td>${season.points}</td>
-        `;
-        tbody.appendChild(row);
-      });
+    const player = players.find(p => p.id === playerId);
+    if (!player) {
+      document.body.innerHTML = "<h2>Player not found</h2>";
+      return;
     }
-    loadPlayer();
+
+    document.getElementById("name").textContent = player.name;
+    document.getElementById("team").textContent = player.team;
+    document.getElementById("position").textContent = player.position;
+
+    const tbody = document.querySelector("#statsTable tbody");
+
+    let totalGames = 0, totalGoals = 0, totalAssists = 0, totalPoints = 0;
+
+    player.seasons.forEach(season => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${season.year}</td>
+        <td>${season.games}</td>
+        <td>${season.goals}</td>
+        <td>${season.assists}</td>
+        <td>${season.points}</td>
+      `;
+      tbody.appendChild(row);
+
+      // Add to totals
+      totalGames += season.games;
+      totalGoals += season.goals;
+      totalAssists += season.assists;
+      totalPoints += season.points;
+    });
+
+    // Career Totals row
+    const totalsRow = document.createElement("tr");
+    totalsRow.classList.add("totals-row");
+    totalsRow.innerHTML = `
+      <td><b>Career Totals</b></td>
+      <td><b>${totalGames}</b></td>
+      <td><b>${totalGoals}</b></td>
+      <td><b>${totalAssists}</b></td>
+      <td><b>${totalPoints}</b></td>
+    `;
+    tbody.appendChild(totalsRow);
+  }
+  loadPlayer();
+</script>
+
   </script>
 </body>
 </html>
