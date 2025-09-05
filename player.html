@@ -7,16 +7,29 @@
 </head>
 <body>
   <div class="player-card">
-   <h1 id="name"></h1>
-   <p><b>Team:</b> <span id="team"></span></p>
-   <p><b>Position:</b> <span id="position"></span></p>
-   <p><b>Goals:</b> <span id="goals"></span></p>
-   <p><b>Assists:</b> <span id="assists"></span></p>
+    <h1 id="name"></h1>
+    <p><b>Team:</b> <span id="team"></span></p>
+    <p><b>Position:</b> <span id="position"></span></p>
+
+    <h2>Season by Season Stats</h2>
+    <table id="statsTable">
+      <thead>
+        <tr>
+          <th>Season</th>
+          <th>GP</th>
+          <th>G</th>
+          <th>A</th>
+          <th>PTS</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
   </div>
+
   <script>
     async function loadPlayer() {
       const params = new URLSearchParams(window.location.search);
-      const playerId = params.get("id"); // e.g., player.html?id=1
+      const playerId = params.get("id");
 
       const res = await fetch("players.json");
       const players = await res.json();
@@ -30,8 +43,19 @@
       document.getElementById("name").textContent = player.name;
       document.getElementById("team").textContent = player.team;
       document.getElementById("position").textContent = player.position;
-      document.getElementById("goals").textContent = player.goals;
-      document.getElementById("assists").textContent = player.assists;
+
+      const tbody = document.querySelector("#statsTable tbody");
+      player.seasons.forEach(season => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${season.year}</td>
+          <td>${season.games}</td>
+          <td>${season.goals}</td>
+          <td>${season.assists}</td>
+          <td>${season.points}</td>
+        `;
+        tbody.appendChild(row);
+      });
     }
     loadPlayer();
   </script>
