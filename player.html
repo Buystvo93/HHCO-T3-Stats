@@ -11,17 +11,7 @@
 
     <h2>Season by Season Stats</h2>
     <table id="statsTable">
-      <thead>
-        <tr>
-          <th>Season</th>
-          <th>GP</th>
-          <th>G</th>
-          <th>A</th>
-          <th>PTS</th>
-          <th>Hits</th>
-          <th>SOG</th>
-        </tr>
-      </thead>
+      <thead></thead>
       <tbody></tbody>
     </table>
   </div>
@@ -32,59 +22,69 @@
       const playerId = params.get("id"); // e.g. ?id=1
 
       try {
-        const res = await fetch("players.json");
+        const res = await fetch("players.json?nocache=" + Date.now());
         const players = await res.json();
 
-        // Match player by string ID
         const player = players.find(p => p.id === playerId);
         if (!player) {
           document.body.innerHTML = "<h2>Player not found</h2>";
           return;
         }
 
-        // Fill basic info
         document.getElementById("name").textContent = player.name;
 
-        const tbody = document.querySelector("#statsTable tbody");
+        const tableHead = document.querySelector("#statsTable thead");
+        const tableBody = document.querySelector("#statsTable tbody");
 
-        // Track totals
-        let totalGames = 0, totalGoals = 0, totalAssists = 0, totalPoints = 0, totalHits = 0, totalSog = 0;
+        if (!player.seasons || player.seasons.length === 0) {
+          tableBody.innerHTML = "<tr><td colspan='10'>No stats available</td></tr>";
+          return;
+        }
 
-        // Add each season row
+        // Use keys from the first season to make dynamic headers
+        const headers = Object.keys(player.seasons[0]);
+
+        // Build table header
+        const headerRow = document.createElement("tr");
+        headers.forEach(h => {
+          const th = document.createElement("th");
+          th.textContent = h.toUpperCase();
+          headerRow.appendChild(th);
+        });
+        tableHead.appendChild(headerRow);
+
+        // Totals tracker
+        const totals = {};
+        headers.forEach(h => totals[h] = (h === "year" ? "" : 0));
+
+        // Fill rows
         player.seasons.forEach(season => {
           const row = document.createElement("tr");
-          row.innerHTML = `
-            <td>${season.year}</td>
-            <td>${season.games}</td>
-            <td>${season.goals}</td>
-            <td>${season.assists}</td>
-            <td>${season.points}</td>
-            <td>${season.hits}</td>
-            <td>${season.sog}</td>
-          `;
-          tbody.appendChild(row);
+          headers.forEach(h => {
+            const td = document.createElement("td");
+            td.textContent = season[h];
+            row.appendChild(td);
 
-          totalGames += season.games;
-          totalGoals += season.goals;
-          totalAssists += season.assists;
-          totalPoints += season.points;
-          totalHits += season.hits
-          totalSog += season.sog
+            if (h !== "year") {
+              totals[h] += Number(season[h]) || 0;
+            }
+          });
+          tableBody.appendChild(row);
         });
 
-        // Add totals row
+        // Totals row
         const totalsRow = document.createElement("tr");
         totalsRow.classList.add("totals-row");
-        totalsRow.innerHTML = `
-          <td><b>Career Totals</b></td>
-          <td><b>${totalGames}</b></td>
-          <td><b>${totalGoals}</b></td>
-          <td><b>${totalAssists}</b></td>
-          <td><b>${totalPoints}</b></td>
-          <td><b>${totalHits}</b></td>
-          <td><b>${totalSog}</b></td>
-        `;
-        tbody.appendChild(totalsRow);
+        headers.forEach(h => {
+          const td = document.createElement("td");
+          if (h === "year") {
+            td.innerHTML = "<b>Career Totals</b>";
+          } else {
+            td.innerHTML = `<b>${totals[h]}</b>`;
+          }
+          totalsRow.appendChild(td);
+        });
+        tableBody.appendChild(totalsRow);
 
       } catch (err) {
         console.error("Error loading player data:", err);
