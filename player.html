@@ -45,9 +45,7 @@
 
     // ✅ Roblox avatar (no fetch, direct image)
     document.getElementById("player-avatar").src =
-      `https://www.roblox.com/headshot-thumbnail/image?userId=${Number(
-        player.id
-      )}&width=420&height=420&format=png`;
+      `https://www.roblox.com/headshot-thumbnail/image?userId=${player.id}&width=420&height=420&format=png`;
 
     // ✅ Stats table
     const tableHead = document.querySelector("#statsTable thead");
