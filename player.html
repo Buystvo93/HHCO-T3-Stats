@@ -43,9 +43,11 @@
     // ✅ Player name
     document.getElementById("name").textContent = player.name;
 
-    // ✅ Roblox avatar (no fetch, direct image)
-  // ✅ Use avatar from JSON directly
-    document.getElementById("player-avatar").src = player.avatar;
+    const avatarImg = document.getElementById("player-avatar");
+    avatarImg.onerror = () => {
+    avatarImg.src = "images/default-avatar.png"; // fallback
+    };
+   avatarImg.src = player.avatar; // link from JSON
 
 
     // ✅ Stats table
