@@ -77,19 +77,7 @@
     headers.forEach((h) => (totals[h] = h === "year" ? "" : 0));
 
     // Fill rows
-    player.seasons.forEach((season) => {
-      const row = document.createElement("tr");
-      headers.forEach((h) => {
-        const td = document.createElement("td");
-        td.textContent = season[h];
-        row.appendChild(td);
-
-        if (h !== "year") {
-          totals[h] += Number(season[h]) || 0;
-        }
-      });
-      tableBody.appendChild(row);
-    });
+ 
 
     // Fill rows
 player.seasons.forEach((season) => {
