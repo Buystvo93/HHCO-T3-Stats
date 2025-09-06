@@ -27,7 +27,7 @@
   <script>
 
     
-    async function loadPlayer() {
+ async function loadPlayer() {
   const params = new URLSearchParams(window.location.search);
   const playerId = params.get("id"); // e.g. ?id=1068898
 
@@ -41,73 +41,89 @@
       return;
     }
 
-    // Player name
+    // ✅ Player name
     document.getElementById("name").textContent = player.name;
 
-    // ✅ Roblox avatar (use player.id directly)
-    document.getElementById("player-avatar").src =
-      `https://www.roblox.com/headshot-thumbnail/image?userId=${Number(player.id)}&width=420&height=420&format=png`;
-
-
-        const tableHead = document.querySelector("#statsTable thead");
-        const tableBody = document.querySelector("#statsTable tbody");
-
-        if (!player.seasons || player.seasons.length === 0) {
-          tableBody.innerHTML = "<tr><td colspan='10'>No stats available</td></tr>";
-          return;
-        }
-
-        // Use keys from the first season to make dynamic headers
-        const headers = Object.keys(player.seasons[0]);
-
-        // Build table header
-        const headerRow = document.createElement("tr");
-        headers.forEach(h => {
-          const th = document.createElement("th");
-          th.textContent = h.toUpperCase();
-          headerRow.appendChild(th);
-        });
-        tableHead.appendChild(headerRow);
-
-        // Totals tracker
-        const totals = {};
-        headers.forEach(h => totals[h] = (h === "year" ? "" : 0));
-
-        // Fill rows
-        player.seasons.forEach(season => {
-          const row = document.createElement("tr");
-          headers.forEach(h => {
-            const td = document.createElement("td");
-            td.textContent = season[h];
-            row.appendChild(td);
-
-            if (h !== "year") {
-              totals[h] += Number(season[h]) || 0;
-            }
-          });
-          tableBody.appendChild(row);
-        });
-
-        // Totals row
-        const totalsRow = document.createElement("tr");
-        totalsRow.classList.add("totals-row");
-        headers.forEach(h => {
-          const td = document.createElement("td");
-          if (h === "year") {
-            td.innerHTML = "<b>Career Totals</b>";
-          } else {
-            td.innerHTML = `<b>${totals[h]}</b>`;
-          }
-          totalsRow.appendChild(td);
-        });
-        tableBody.appendChild(totalsRow);
-
-      } catch (err) {
-        console.error("Error loading player data:", err);
-        document.body.innerHTML = "<h2>Error loading data</h2>";
+    // ✅ Fetch Roblox avatar using Thumbnail API
+    try {
+      const avatarRes = await fetch(
+        `https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${Number(
+          player.id
+        )}&size=420x420&format=Png&isCircular=false`
+      );
+      const avatarData = await avatarRes.json();
+      if (avatarData.data && avatarData.data.length > 0) {
+        document.getElementById("player-avatar").src =
+          avatarData.data[0].imageUrl;
+      } else {
+        console.warn("No avatar found for", player.id);
       }
+    } catch (avatarErr) {
+      console.error("Error fetching avatar:", avatarErr);
     }
-    loadPlayer();
+
+    // ✅ Stats table
+    const tableHead = document.querySelector("#statsTable thead");
+    const tableBody = document.querySelector("#statsTable tbody");
+
+    if (!player.seasons || player.seasons.length === 0) {
+      tableBody.innerHTML =
+        "<tr><td colspan='10'>No stats available</td></tr>";
+      return;
+    }
+
+    // Use keys from the first season to make dynamic headers
+    const headers = Object.keys(player.seasons[0]);
+
+    // Build table header
+    const headerRow = document.createElement("tr");
+    headers.forEach((h) => {
+      const th = document.createElement("th");
+      th.textContent = h.toUpperCase();
+      headerRow.appendChild(th);
+    });
+    tableHead.appendChild(headerRow);
+
+    // Totals tracker
+    const totals = {};
+    headers.forEach((h) => (totals[h] = h === "year" ? "" : 0));
+
+    // Fill rows
+    player.seasons.forEach((season) => {
+      const row = document.createElement("tr");
+      headers.forEach((h) => {
+        const td = document.createElement("td");
+        td.textContent = season[h];
+        row.appendChild(td);
+
+        if (h !== "year") {
+          totals[h] += Number(season[h]) || 0;
+        }
+      });
+      tableBody.appendChild(row);
+    });
+
+    // Totals row
+    const totalsRow = document.createElement("tr");
+    totalsRow.classList.add("totals-row");
+    headers.forEach((h) => {
+      const td = document.createElement("td");
+      if (h === "year") {
+        td.innerHTML = "<b>Career Totals</b>";
+      } else {
+        td.innerHTML = `<b>${totals[h]}</b>`;
+      }
+      totalsRow.appendChild(td);
+    });
+    tableBody.appendChild(totalsRow);
+  } catch (err) {
+    console.error("Error loading player data:", err);
+    document.body.innerHTML = "<h2>Error loading data</h2>";
+  }
+}
+
+loadPlayer();
+
   </script>
 </body>
 </html>
