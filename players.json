@@ -13,10 +13,11 @@
     "name": "Jimcs",
     "avatar": "https://www.roblox.com/headshot-thumbnail/image?userId=1068898&width=420&height=420&format=png",
     "seasons": [
-      { "year": "S22", "games": 19, "goals": 29, "assists": 12, "points": 41, "hits": 483, "sog": 119 },
-      { "year": "S23", "games": 14, "goals": 14, "assists": 12, "points": 26, "hits": 364, "sog": 76 },
-      { "year": "S24", "games": 30, "goals": 55, "assists": 30, "points": 85, "hits": 813, "sog": 223 },
-      { "year": "S25", "games": 20, "goals": 37, "assists": 19, "points": 56, "hits": 532, "sog": 169 }
+      { "year": "S17", "games": 23, "goals": 24, "assists": 20, "points": 44, "hits": 306, "sog": 135, "cup": true },
+      { "year": "S22", "games": 19, "goals": 29, "assists": 12, "points": 41, "hits": 483, "sog": 119, "cup": false },
+      { "year": "S23", "games": 14, "goals": 14, "assists": 12, "points": 26, "hits": 364, "sog": 76, "cup": false },
+      { "year": "S24", "games": 30, "goals": 55, "assists": 30, "points": 85, "hits": 813, "sog": 223, "cup": false },
+      { "year": "S25", "games": 20, "goals": 37, "assists": 19, "points": 56, "hits": 532, "sog": 169, "cup": false}
       
     ]
   }
