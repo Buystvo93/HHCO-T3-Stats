@@ -28,26 +28,26 @@
 
     
     async function loadPlayer() {
-      const params = new URLSearchParams(window.location.search);
-      const playerId = params.get("id"); // e.g. ?id=1
+  const params = new URLSearchParams(window.location.search);
+  const playerId = params.get("id"); // e.g. ?id=1068898
 
-      
+  try {
+    const res = await fetch("players.json?nocache=" + Date.now());
+    const players = await res.json();
 
-      try {
-        const res = await fetch("players.json?nocache=" + Date.now());
-        const players = await res.json();
+    const player = players.find(p => p.id === playerId);
+    if (!player) {
+      document.body.innerHTML = "<h2>Player not found</h2>";
+      return;
+    }
 
-        const player = players.find(p => p.id === playerId);
-        if (!player) {
-          document.body.innerHTML = "<h2>Player not found</h2>";
-          return;
-        }
+    // Player name
+    document.getElementById("name").textContent = player.name;
 
-        document.getElementById("name").textContent = player.name;
+    // ✅ Roblox avatar (use player.id directly)
+    document.getElementById("player-avatar").src =
+      `https://www.roblox.com/headshot-thumbnail/image?userId=${player.id}&width=420&height=420&format=png`;
 
-         const playerId = player.id; // assuming your JSON has "id" as Roblox ID
-         document.getElementById("player-avatar").src =
-        `https://www.roblox.com/headshot-thumbnail/image?userId=${playerId}&width=420&height=420&format=png`;
 
         const tableHead = document.querySelector("#statsTable thead");
         const tableBody = document.querySelector("#statsTable tbody");
