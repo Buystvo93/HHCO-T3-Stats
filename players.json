@@ -11,6 +11,7 @@
     "id": "2",
     "name": "Jimcs",
     "seasons": [
+      { "year": "S23", "games": 14, "goals": 14, "assists": 12, "points": 26, "hits": 364, "sog": 76 },
       { "year": "S24", "games": 30, "goals": 55, "assists": 30, "points": 85, "hits": 813, "sog": 223 },
       { "year": "S25", "games": 20, "goals": 37, "assists": 19, "points": 56, "hits": 532, "sog": 169 }
       
