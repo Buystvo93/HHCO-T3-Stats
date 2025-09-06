@@ -25,9 +25,13 @@
   
   <a href="index.html" class="back-btn">← Back to Home</a>
   <script>
+
+    
     async function loadPlayer() {
       const params = new URLSearchParams(window.location.search);
       const playerId = params.get("id"); // e.g. ?id=1
+
+      
 
       try {
         const res = await fetch("players.json?nocache=" + Date.now());
@@ -40,6 +44,10 @@
         }
 
         document.getElementById("name").textContent = player.name;
+
+         const playerId = player.id; // assuming your JSON has "id" as Roblox ID
+         document.getElementById("player-avatar").src =
+        `https://www.roblox.com/headshot-thumbnail/image?userId=${playerId}&width=420&height=420&format=png`;
 
         const tableHead = document.querySelector("#statsTable thead");
         const tableBody = document.querySelector("#statsTable tbody");
