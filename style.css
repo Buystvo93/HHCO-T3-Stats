@@ -142,3 +142,11 @@ ul li a {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* Gold highlight for Cup-winning years */
+.cup-year {
+  background-color: gold !important;
+  font-weight: bold;
+  color: black;
+}
+
+
