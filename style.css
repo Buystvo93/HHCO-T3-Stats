@@ -65,8 +65,8 @@ table tbody tr:hover {
 
 /* Career Totals Row */
 .totals-row {
-  background-color: #003366;
-  color: white;
+  background-color: #003366 !important;
+  color: white !important;
   font-weight: bold;
 }
 
@@ -123,4 +123,5 @@ ul li a {
 .totals-row td {
   font-weight: bold;
   font-size: 15px;
+  color: white !important;
 }
