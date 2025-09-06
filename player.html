@@ -91,6 +91,29 @@
       tableBody.appendChild(row);
     });
 
+    // Fill rows
+player.seasons.forEach((season) => {
+  const row = document.createElement("tr");
+
+  // 🎖 If this season includes a cup win, mark the row
+  if (season.cup === true) {
+    row.classList.add("cup-year");
+  }
+
+  headers.forEach((h) => {
+    const td = document.createElement("td");
+    td.textContent = season[h];
+    row.appendChild(td);
+
+    if (h !== "year" && h !== "cup") {
+      totals[h] += Number(season[h]) || 0;
+    }
+  });
+
+  tableBody.appendChild(row);
+});
+
+
     // Totals row
     const totalsRow = document.createElement("tr");
     totalsRow.classList.add("totals-row");
