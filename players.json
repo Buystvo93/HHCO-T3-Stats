@@ -11,7 +11,7 @@
       { "year": "S25", "games": 27, "goals": 41, "assists": 27, "points": 68, "hits": 1072, "sog": 166, "cup": false }
     ],
     "goalieSeasons": [
-      { "season": "S25", "games": 1, "win": 0, "loss": 0, "OTL", "Shot Faced": 2, "Saves": 1, "S%": 0.500 }
+      { "season": "S25", "games": 1, "win": 0, "loss": 0, "OTL", "Shot Faced": 2, "Saves": 1, "Shutout": 0 }
     ]
   },
   {
