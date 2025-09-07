@@ -4,6 +4,7 @@
     "name": "J_oblo",
     "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-0AE9698BAED4F7980E59A77ED2AC7BF9-Png/150/150/AvatarHeadshot/Webp/noFilter",
     "seasons": [
+      { "year": "S19", "games": 30, "goals": 19, "assists": 16, "points": 35, "hits": 575, "sog": 116, "cup": false },
       { "year": "S20", "games": 31, "goals": 40, "assists": 22, "points": 62, "hits": 1098, "sog": 181, "cup": false },
       { "year": "S21", "games": 24, "goals": 31, "assists": 20, "points": 51, "hits": 750, "sog": 153, "cup": false },
       { "year": "S22", "games": 23, "goals": 28, "assists": 28, "points": 56, "hits": 561, "sog": 108, "cup": false },
