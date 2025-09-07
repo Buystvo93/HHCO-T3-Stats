@@ -4,6 +4,27 @@
   <meta charset="UTF-8">
   <title>Player Profile</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .cup-year {
+      background-color: gold;
+      font-weight: bold;
+    }
+    .totals-row {
+      background-color: #ddd;
+      font-weight: bold;
+    }
+    .player-card {
+      max-width: 800px;
+      margin: auto;
+    }
+    .avatar-container {
+      text-align: center;
+    }
+    .player-avatar {
+      max-width: 200px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
   <div class="player-card">
@@ -12,119 +33,169 @@
       <div class="avatar-container">
         <img id="player-avatar" class="player-avatar" alt="Player Avatar">
       </div>
-     <h1 id="player-name"></h1>
+      <h1 id="player-name"></h1>
     </div>
 
-    
     <h1 id="name"></h1>
 
-    <h2>Season by Season Stats</h2>
+    <!-- Skater Stats -->
+    <h2>Season by Season Stats (Skater)</h2>
     <table id="statsTable">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Goalie Stats -->
+    <h2>Season by Season Stats (Goalie)</h2>
+    <table id="goalieStatsTable">
       <thead></thead>
       <tbody></tbody>
     </table>
   </div>
   
   <a href="index.html" class="back-btn">← Back to Home</a>
+
   <script>
+  async function loadPlayer() {
+    const params = new URLSearchParams(window.location.search);
+    const playerId = params.get("id"); // e.g. ?id=1068898
 
- async function loadPlayer() {
-  const params = new URLSearchParams(window.location.search);
-  const playerId = params.get("id"); // e.g. ?id=1068898
+    try {
+      const res = await fetch("players.json?nocache=" + Date.now());
+      const players = await res.json();
 
-  try {
-    const res = await fetch("players.json?nocache=" + Date.now());
-    const players = await res.json();
-
-    const player = players.find(p => p.id === playerId);
-    if (!player) {
-      document.body.innerHTML = "<h2>Player not found</h2>";
-      return;
-    }
-
-    // ✅ Player name
-    document.getElementById("name").textContent = player.name;
-
-    const avatarImg = document.getElementById("player-avatar");
-    avatarImg.onerror = () => {
-    avatarImg.src = "images/default-avatar.png"; // fallback
-    };
-   avatarImg.src = player.avatar; // link from JSON
-
-
-    // ✅ Stats table
-    const tableHead = document.querySelector("#statsTable thead");
-    const tableBody = document.querySelector("#statsTable tbody");
-
-    if (!player.seasons || player.seasons.length === 0) {
-      tableBody.innerHTML =
-        "<tr><td colspan='10'>No stats available</td></tr>";
-      return;
-    }
-
-    // Use keys from the first season to make dynamic headers
-    const headers = Object.keys(player.seasons[0]);
-
-    // Build table header
-    const headerRow = document.createElement("tr");
-    headers.forEach((h) => {
-      const th = document.createElement("th");
-      th.textContent = h.toUpperCase();
-      headerRow.appendChild(th);
-    });
-    tableHead.appendChild(headerRow);
-
-    // Totals tracker
-    const totals = {};
-    headers.forEach((h) => (totals[h] = h === "year" ? "" : 0));
-
-    // Fill rows
- 
-
-    // Fill rows
-player.seasons.forEach((season) => {
-  const row = document.createElement("tr");
-
-  // 🎖 If this season includes a cup win, mark the row
-  if (season.cup === true) {
-    row.classList.add("cup-year");
-  }
-
-  headers.forEach((h) => {
-    const td = document.createElement("td");
-    td.textContent = season[h];
-    row.appendChild(td);
-
-    if (h !== "year" && h !== "cup") {
-      totals[h] += Number(season[h]) || 0;
-    }
-  });
-
-  tableBody.appendChild(row);
-});
-
-
-    // Totals row
-    const totalsRow = document.createElement("tr");
-    totalsRow.classList.add("totals-row");
-    headers.forEach((h) => {
-      const td = document.createElement("td");
-      if (h === "year") {
-        td.innerHTML = "<b>Career Totals</b>";
-      } else {
-        td.innerHTML = `<b>${totals[h]}</b>`;
+      const player = players.find(p => p.id === playerId);
+      if (!player) {
+        document.body.innerHTML = "<h2>Player not found</h2>";
+        return;
       }
-      totalsRow.appendChild(td);
-    });
-    tableBody.appendChild(totalsRow);
-  } catch (err) {
-    console.error("Error loading player data:", err);
-    document.body.innerHTML = "<h2>Error loading data</h2>";
+
+      // ✅ Player name
+      document.getElementById("name").textContent = player.name;
+
+      const avatarImg = document.getElementById("player-avatar");
+      avatarImg.onerror = () => {
+        avatarImg.src = "images/default-avatar.png"; // fallback
+      };
+      avatarImg.src = player.avatar; // link from JSON
+
+      // ✅ Skater Stats Table
+      const tableHead = document.querySelector("#statsTable thead");
+      const tableBody = document.querySelector("#statsTable tbody");
+
+      if (!player.seasons || player.seasons.length === 0) {
+        tableBody.innerHTML =
+          "<tr><td colspan='10'>No stats available</td></tr>";
+      } else {
+        const headers = Object.keys(player.seasons[0]);
+
+        const headerRow = document.createElement("tr");
+        headers.forEach((h) => {
+          const th = document.createElement("th");
+          th.textContent = h.toUpperCase();
+          headerRow.appendChild(th);
+        });
+        tableHead.appendChild(headerRow);
+
+        const totals = {};
+        headers.forEach((h) => (totals[h] = h === "year" ? "" : 0));
+
+        player.seasons.forEach((season) => {
+          const row = document.createElement("tr");
+
+          if (season.cup === true) {
+            row.classList.add("cup-year");
+          }
+
+          headers.forEach((h) => {
+            const td = document.createElement("td");
+            td.textContent = season[h];
+            row.appendChild(td);
+
+            if (h !== "year" && h !== "cup") {
+              totals[h] += Number(season[h]) || 0;
+            }
+          });
+
+          tableBody.appendChild(row);
+        });
+
+        const totalsRow = document.createElement("tr");
+        totalsRow.classList.add("totals-row");
+        headers.forEach((h) => {
+          const td = document.createElement("td");
+          if (h === "year") {
+            td.innerHTML = "<b>Career Totals</b>";
+          } else {
+            td.innerHTML = `<b>${totals[h]}</b>`;
+          }
+          totalsRow.appendChild(td);
+        });
+        tableBody.appendChild(totalsRow);
+      }
+
+      // ✅ Goalie Stats Table
+      const goalieTableHead = document.querySelector("#goalieStatsTable thead");
+      const goalieTableBody = document.querySelector("#goalieStatsTable tbody");
+
+      if (player.goalieSeasons && player.goalieSeasons.length > 0) {
+        const gHeaders = Object.keys(player.goalieSeasons[0]);
+
+        const gHeaderRow = document.createElement("tr");
+        gHeaders.forEach((h) => {
+          const th = document.createElement("th");
+          th.textContent = h.toUpperCase();
+          gHeaderRow.appendChild(th);
+        });
+        goalieTableHead.appendChild(gHeaderRow);
+
+        const gTotals = {};
+        gHeaders.forEach((h) => (gTotals[h] = h === "year" ? "" : 0));
+
+        player.goalieSeasons.forEach((season) => {
+          const row = document.createElement("tr");
+
+          if (season.cup === true) {
+            row.classList.add("cup-year");
+          }
+
+          gHeaders.forEach((h) => {
+            const td = document.createElement("td");
+            td.textContent = season[h];
+            row.appendChild(td);
+
+            if (h !== "year" && h !== "cup") {
+              gTotals[h] += Number(season[h]) || 0;
+            }
+          });
+
+          goalieTableBody.appendChild(row);
+        });
+
+        const gTotalsRow = document.createElement("tr");
+        gTotalsRow.classList.add("totals-row");
+        gHeaders.forEach((h) => {
+          const td = document.createElement("td");
+          if (h === "year") {
+            td.innerHTML = "<b>Career Totals</b>";
+          } else {
+            td.innerHTML = `<b>${gTotals[h]}</b>`;
+          }
+          gTotalsRow.appendChild(td);
+        });
+        goalieTableBody.appendChild(gTotalsRow);
+      } else {
+        goalieTableBody.innerHTML =
+          "<tr><td colspan='10'>No goalie stats available</td></tr>";
+      }
+
+    } catch (err) {
+      console.error("Error loading player data:", err);
+      document.body.innerHTML = "<h2>Error loading data</h2>";
+    }
   }
-}
 
-loadPlayer();
-
+  loadPlayer();
   </script>
 </body>
 </html>
