@@ -8,7 +8,10 @@
       { "year": "S2", "games": 6, "goals": 2, "assists": 2, "points": 4, "hits": 27, "sog": 0, "cup": false },
       { "year": "S3", "games": 24, "goals": 9, "assists": 20, "points": 29, "hits": 143, "sog": 0, "cup": false },
       { "year": "S4", "games": 24, "goals": 7, "assists": 11, "points": 18, "hits": 182, "sog": 53, "cup": false },
-      { "year": "S5", "games": 6, "goals": 4, "assists": 5, "points": 9, "hits": 72, "sog": 10, "cup": true }
+      { "year": "S5", "games": 6, "goals": 4, "assists": 5, "points": 9, "hits": 72, "sog": 10, "cup": true },
+      { "year": "S8", "games": 5, "goals": 0, "assists": 3, "points": 3, "hits": 86, "sog": 16, "cup": false },
+      { "year": "S10", "games": 10, "goals": 12, "assists": 2, "points": 14, "hits": 93, "sog": 38, "cup": false },
+      { "year": "S13", "games": 11, "goals": 12, "assists": 11, "points": 23, "hits": 48, "sog": 68, "cup": false }
     ]
   },
   {
