@@ -2,7 +2,7 @@
 
   {
     "id": "2",
-    "name": "1ihts",
+    "name": "1ehts",
     "avatar": "",
     "seasons": [
       { "year": "S3", "games": 13, "goals": 6, "assists": 6, "points": 12, "hits": 90, "sog": 0, "cup": false },
@@ -17,7 +17,16 @@
       { "year": "S21", "games": 20, "goals": 13, "assists": 12, "points": 25, "hits": 391, "sog": 50, "cup": false },
       { "year": "S22", "games": 8, "goals": 1, "assists": 3, "points": 4, "hits": 101, "sog": 8, "cup": false },
       { "year": "S23", "games": 8, "goals": 0, "assists": 3, "points": 3, "hits": 60, "sog": 4, "cup": false },
-      { "year": "S24", "games": 12, "goals": 5, "assists": 5, "points": 10, "hits": 148, "sog": 19, "cup": true }
+      { "year": "S24", "games": 12, "goals": 5, "assists": 5, "points": 10, "hits": 148, "sog": 19, "cup": true },
+      { "year": "S25", "games": 8, "goals": 2, "assists": 2, "points": 4, "hits": 111, "sog": 12, "cup": false }
+    ],
+
+    "goalieSeasons": [
+      { "year": "S13", "games": 1, "win": 0, "loss": 0, "OTL": 0, "Shot Faced": 6, "Saves": 5, "Shutout": 0 },
+      { "year": "S16", "games": 2, "win": 0, "loss": 1, "OTL": 0, "Shot Faced": 29, "Saves": 22, "Shutout": 0 },
+      { "year": "S17", "games": 8, "win": 4, "loss": 3, "OTL": 1, "Shot Faced": 162, "Saves": 143, "Shutout": 1 },
+      { "year": "S19", "games": 1, "win": 0, "loss": 1, "OTL": 0, "Shot Faced": 21, "Saves": 16, "Shutout": 0 },
+      { "year": "S21", "games": 3, "win": 0, "loss": 1, "OTL": 0, "Shot Faced": 30, "Saves": 25, "Shutout": 0 }
     ]
   },
   {
