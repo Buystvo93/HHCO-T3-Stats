@@ -14,7 +14,9 @@
       { "year": "S13", "games": 11, "goals": 12, "assists": 11, "points": 23, "hits": 48, "sog": 68, "cup": false },
       { "year": "S14", "games": 26, "goals": 24, "assists": 22, "points": 46, "hits": 376, "sog": 168, "cup": false },
       { "year": "S15", "games": 14, "goals": 14, "assists": 17, "points": 31, "hits": 117, "sog": 45, "cup": false },
-      { "year": "S16", "games": 21, "goals": 5, "assists": 15, "points": 20, "hits": 160, "sog": 71, "cup": false }
+      { "year": "S16", "games": 21, "goals": 5, "assists": 15, "points": 20, "hits": 160, "sog": 71, "cup": false },
+      { "year": "S17", "games": 23, "goals": 7, "assists": 17, "points": 24, "hits": 164, "sog": 65, "cup": false },
+      { "year": "S18", "games": 16, "goals": 7, "assists": 3, "points": 10, "hits": 119, "sog": 37, "cup": false }
     ]
   },
   {
