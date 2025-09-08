@@ -26,7 +26,8 @@
       { "year": "S16", "games": 2, "win": 0, "loss": 1, "OTL": 0, "Shot Faced": 29, "Saves": 22, "Shutout": 0 },
       { "year": "S17", "games": 8, "win": 4, "loss": 3, "OTL": 1, "Shot Faced": 162, "Saves": 143, "Shutout": 1 },
       { "year": "S19", "games": 1, "win": 0, "loss": 1, "OTL": 0, "Shot Faced": 21, "Saves": 16, "Shutout": 0 },
-      { "year": "S21", "games": 3, "win": 0, "loss": 1, "OTL": 0, "Shot Faced": 30, "Saves": 25, "Shutout": 0 }
+      { "year": "S21", "games": 3, "win": 0, "loss": 1, "OTL": 0, "Shot Faced": 30, "Saves": 25, "Shutout": 0 },
+      { "year": "S25", "games": 1, "win": 0, "loss": 0, "OTL": 0, "Shot Faced": 9, "Saves": 7, "Shutout": 0 }
     ]
   },
   {
