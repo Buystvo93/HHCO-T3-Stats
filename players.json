@@ -1,5 +1,17 @@
 [
   {
+    "id": "3",
+    "name": "1litre",
+    "avatar": "",
+    "seasons": [
+      { "year": "S1", "games": 21, "goals": 8, "assists": 12, "points": 20, "hits": 29, "sog": 0, "cup": false },
+      { "year": "S2", "games": 6, "goals": 2, "assists": 2, "points": 4, "hits": 27, "sog": 0, "cup": false },
+      { "year": "S3", "games": 24, "goals": 9, "assists": 20, "points": 29, "hits": 143, "sog": 0, "cup": false },
+      { "year": "S4", "games": 24, "goals": 7, "assists": 11, "points": 18, "hits": 182, "sog": 53, "cup": false },
+      { "year": "S5", "games": 6, "goals": 4, "assists": 5, "points": 9, "hits": 72, "sog": 10, "cup": true }
+    ]
+  },
+  {
     "id": "103327328",
     "name": "1jaimep",
     "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-9830CE7D640D3478EC8A14CE72017EE6-Png/150/150/AvatarHeadshot/Webp/noFilter",
