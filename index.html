@@ -5,21 +5,69 @@
   <title>Players</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .search-container {
-      margin-bottom: 20px;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+      text-align: center;
     }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .search-container {
+      margin-bottom: 30px;
+    }
+
     #searchInput {
       width: 100%;
       max-width: 400px;
-      padding: 10px;
+      padding: 12px 15px;
       font-size: 16px;
+      border: 2px solid #0078d7;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.2s;
     }
+
+    #searchInput:focus {
+      border-color: #005bb5;
+      box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+    }
+
     #playerList {
       list-style-type: none;
       padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
     }
+
     #playerList li {
-      margin: 5px 0;
+      margin: 10px 0;
+    }
+
+    #playerList a {
+      display: block;
+      padding: 12px 15px;
+      text-decoration: none;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      color: #0078d7;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    #playerList a:hover {
+      background: #0078d7;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
