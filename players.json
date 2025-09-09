@@ -22,7 +22,8 @@
       { "year": "S20", "games": 12, "goals": 1, "assists": 3, "points": 4, "hits": 31, "sog": 14, "cup": false },
       { "year": "S21", "games": 16, "goals": 4, "assists": 3, "points": 7, "hits": 101, "sog": 19, "cup": false },
       { "year": "S22", "games": 9, "goals": 3, "assists": 2, "points": 5, "hits": 56, "sog": 17, "cup": false },
-      { "year": "S24", "games": 5, "goals": 0, "assists": 1, "points": 1, "hits": 6, "sog": 1, "cup": false }
+      { "year": "S24", "games": 5, "goals": 0, "assists": 1, "points": 1, "hits": 6, "sog": 1, "cup": false },
+      { "year": "S25", "games": 5, "goals": 0, "assists": 0, "points": 0, "hits": 7, "sog": 6, "cup": false }
     ]
   },
   {
