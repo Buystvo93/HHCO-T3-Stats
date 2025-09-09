@@ -1,4 +1,18 @@
 [
+  {
+  "id": "140187311",
+  "name": "343nooby",
+  "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-27FA51D2BEC2A2433B72C00244289548-Png/150/150/AvatarHeadshot/Webp/noFilter",
+  "seasons": [
+    { "year": "S13", "games": 5, "goals": 3, "assists": 1, "points": 4, "hits": 15, "sog": 13, "cup": false },
+    { "year": "S14", "games": 10, "goals": 5, "assists": 4, "points": 9, "hits": 8, "sog": 33, "cup": false },
+    { "year": "S15", "games": 9, "goals": 3, "assists": 2, "points": 5, "hits": 27, "sog": 24, "cup": false },
+    { "year": "S16", "games": 14, "goals": 4, "assists": 1, "points": 5, "hits": 68, "sog": 21, "cup": false },
+    { "year": "S17", "games": 8, "goals": 1, "assists": 0, "points": 1, "hits": 25, "sog": 12, "cup": false },
+    { "year": "S18", "games": 4, "goals": 0, "assists": 2, "points": 2, "hits": 5, "sog": 5, "cup": false }
+   ]
+  },
+
 
   {
     "id": "72056151",
