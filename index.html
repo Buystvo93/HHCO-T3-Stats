@@ -9,51 +9,69 @@
       font-family: Arial, sans-serif;
       background: #f4f4f9;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       color: #333;
-      text-align: center;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #222;
+    /* 🔵 Navigation bar */
+    nav {
+      background: #0078d7;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    .search-container {
-      margin-bottom: 30px;
+    .nav-left {
+      display: flex;
+      align-items: center;
     }
 
+    .logo {
+      height: 40px;
+      margin-right: 12px;
+    }
+
+    .title {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    /* 🔍 Search bar inside nav */
     #searchInput {
-      width: 100%;
-      max-width: 400px;
-      padding: 12px 15px;
-      font-size: 16px;
-      border: 2px solid #0078d7;
-      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
       outline: none;
-      transition: 0.2s;
+      width: 250px;
+      max-width: 100%;
     }
 
     #searchInput:focus {
-      border-color: #005bb5;
-      box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+      box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
     }
 
+    /* 📋 Player List */
     #playerList {
       list-style-type: none;
-      padding: 0;
-      max-width: 600px;
-      margin: 0 auto;
+      padding: 20px;
+      max-width: 700px;
+      margin: 20px auto;
     }
 
     #playerList li {
-      margin: 10px 0;
+      margin: 12px 0;
     }
 
     #playerList a {
       display: block;
-      padding: 12px 15px;
+      padding: 15px;
       text-decoration: none;
       background: white;
       border-radius: 10px;
@@ -67,17 +85,21 @@
       background: #0078d7;
       color: white;
       transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     }
   </style>
 </head>
 <body>
-  <h1>All Players</h1>
-
-  <div class="search-container">
+  <!-- 🔵 Navigation Bar -->
+  <nav>
+    <div class="nav-left">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <span class="title">HHCO</span>
+    </div>
     <input type="text" id="searchInput" placeholder="Search players...">
-  </div>
+  </nav>
 
+  <!-- 📋 Player List -->
   <ul id="playerList"></ul>
 
   <script>
