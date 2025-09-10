@@ -1,5 +1,15 @@
 [
   {
+  "id": "87274294",
+  "name": "726exalted",
+  "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-B7DF9978F65FFDDD0A86594E03B0639B-Png/150/150/AvatarHeadshot/Webp/noFilter",
+  "seasons": [
+    { "year": "S15", "games": 8, "goals": 5, "assists": 2, "points": 7, "hits": 42, "sog": 14, "cup": false },
+    { "year": "S15", "games": 6, "goals": 2, "assists": 3, "points": 5, "hits": 25, "sog": 28, "cup": false },
+    { "year": "S19", "games": 1, "goals": 0, "assists": 0, "points": 0, "hits": 3, "sog": 1, "cup": false }
+  ]
+},
+  {
   "id": "45077040",
   "name": "6nsta",
   "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-955D03739302B0A71B31F80DFB2C84EF-Png/150/150/AvatarHeadshot/Webp/noFilter",
