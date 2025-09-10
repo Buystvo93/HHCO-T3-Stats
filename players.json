@@ -1,6 +1,14 @@
 [
   {
   "id": "",
+  "name": "6nsta",
+  "avatar": "",
+  "seasons": [
+    { "year": "S20", "games": 1, "goals": 1, "assists": 0, "points": 1, "hits": 15, "sog": 6, "cup": true }
+  ]
+},
+  {
+  "id": "",
   "name": "54nr",
   "avatar": "",
   "seasons": [
