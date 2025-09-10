@@ -1,5 +1,18 @@
 [
   {
+  "id": "6268151",
+  "name": "4nr",
+  "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-987D5A19B8CB55D246721C1D878942BD-Png/150/150/AvatarHeadshot/Webp/noFilter",
+  "seasons": [
+    { "year": "S3", "games": 5, "goals": 2, "assists": 1, "points": 3, "hits": 1, "sog": 1, "cup": false },
+    { "year": "S4", "games": 22, "goals": 14, "assists": 6, "points": 20, "hits": 122, "sog": 68, "cup": false },
+    { "year": "S5", "games": 3, "goals": 0, "assists": 1, "points": 1, "hits": 25, "sog": 3, "cup": false },
+    { "year": "S8", "games": 4, "goals": 4, "assists": 0, "points": 4, "hits": 52, "sog": 16, "cup": false },
+    { "year": "S14", "games": 0, "goals": 0, "assists": 0, "points": 0, "hits": 0, "sog": 0, "cup": false }
+  ]
+},
+
+  {
   "id": "477773107",
   "name": "420moz",
   "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-8819114B47CEC298739A05698323EA70-Png/150/150/AvatarHeadshot/Webp/noFilter",
