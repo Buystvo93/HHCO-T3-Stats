@@ -1,5 +1,34 @@
 [
   {
+  "id": "",
+  "name": "420moz",
+  "avatar": "",
+  "seasons": [
+    { "year": "S3", "games": 19, "goals": 4, "assists": 9, "points": 13, "hits": 76, "sog": 0, "cup": false },
+    { "year": "S4", "games": 2, "goals": 1, "assists": 3, "points": 4, "hits": 18, "sog": 3, "cup": false },
+    { "year": "S5", "games": 2, "goals": 1, "assists": 2, "points": 3, "hits": 31, "sog": 14, "cup": false },
+    { "year": "S10", "games": 25, "goals": 21, "assists": 21, "points": 42, "hits": 231, "sog": 131, "cup": false },
+    { "year": "S12", "games": 13, "goals": 24, "assists": 13, "points": 37, "hits": 223, "sog": 146, "cup": false },
+    { "year": "S13", "games": 26, "goals": 78, "assists": 39, "points": 117, "hits": 402, "sog": 292, "cup": false },
+    { "year": "S14", "games": 34, "goals": 51, "assists": 27, "points": 78, "hits": 349, "sog": 291, "cup": false },
+    { "year": "S15", "games": 36, "goals": 58, "assists": 35, "points": 93, "hits": 691, "sog": 294, "cup": false },
+    { "year": "S17", "games": 26, "goals": 40, "assists": 37, "points": 77, "hits": 681, "sog": 194, "cup": false },
+    { "year": "S18", "games": 24, "goals": 29, "assists": 22, "points": 51, "hits": 545, "sog": 155, "cup": false },
+    { "year": "S19", "games": 31, "goals": 24, "assists": 29, "points": 53, "hits": 701, "sog": 190, "cup": false },
+    { "year": "S20", "games": 26, "goals": 24, "assists": 16, "points": 40, "hits": 604, "sog": 162, "cup": false },
+    { "year": "S21", "games": 16, "goals": 18, "assists": 11, "points": 29, "hits": 368, "sog": 122, "cup": false },
+    { "year": "S22", "games": 16, "goals": 31, "assists": 14, "points": 45, "hits": 329, "sog": 142, "cup": false },
+    { "year": "S23", "games": 19, "goals": 14, "assists": 8, "points": 22, "hits": 344, "sog": 142, "cup": false },
+    { "year": "S24", "games": 23, "goals": 37, "assists": 21, "points": 58, "hits": 485, "sog": 140, "cup": false },
+    { "year": "S25", "games": 25, "goals": 28, "assists": 29, "points": 58, "hits": 546, "sog": 141, "cup": false }
+  ],
+    "goalieSeasons": [
+        { "year": "S16", "games": 31, "win": 30, "loss": 0, "OTL": 0, "Shot Faced": 546, "Saves": 489, "Shutout": 4 },
+        { "year": "S24", "games": 1, "win": 0, "loss": 0, "OTL": 0, "Shot Faced": 4, "Saves": 3, "Shutout": 0 }
+    ]
+},
+
+  {
   "id": "41074950",
   "name": "3eafs",
   "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-7B94ABAAE88926A9A92AF0D793B21B8E-Png/150/150/AvatarHeadshot/Webp/noFilter",
