@@ -1,5 +1,14 @@
 [
   {
+  "id": "",
+  "name": "54nr",
+  "avatar": "",
+  "seasons": [
+    { "year": "S2", "games": 10, "goals": 4, "assists": 1, "points": 5, "hits": 3, "sog": 0, "cup": false },
+    { "year": "S4", "games": 24, "goals": 26, "assists": 11, "points": 37, "hits": 88, "sog": 99, "cup": false }
+  ]
+},
+  {
   "id": "6268151",
   "name": "4nr",
   "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-987D5A19B8CB55D246721C1D878942BD-Png/150/150/AvatarHeadshot/Webp/noFilter",
