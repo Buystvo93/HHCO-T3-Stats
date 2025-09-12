@@ -1,5 +1,17 @@
 [
   {
+  "id": "21017994",
+  "name": "92_Kuzy",
+  "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-61E5509629D302A42703FDB613888455-Png/150/150/AvatarHeadshot/Webp/noFilter",
+  "seasons": [
+    { "year": "S13", "games": 6, "goals": 1, "assists": 5, "points": 6, "hits": 45, "sog": 13, "cup": true },
+    { "year": "S14", "games": 7, "goals": 0, "assists": 0, "points": 0, "hits": 37, "sog": 20, "cup": false },
+    { "year": "S15", "games": 6, "goals": 0, "assists": 2, "points": 2, "hits": 17, "sog": 4, "cup": false },
+    { "year": "S16", "games": 3, "goals": 1, "assists": 1, "points": 2, "hits": 27, "sog": 5, "cup": false }
+  ]
+},
+
+  {
   "id": "2281484054",
   "name": "91KCrystal",
   "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-464F79E0741F985EA466712F3E85A470-Png/150/150/AvatarHeadshot/Webp/noFilter",
