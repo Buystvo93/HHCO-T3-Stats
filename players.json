@@ -11,7 +11,19 @@
     { "year": "S5", "games": 7, "goals": 6, "assists": 11, "points": 17, "hits": 88, "sog": 21, "cup": false },
     { "year": "S8", "games": 3, "goals": 3, "assists": 2, "points": 5, "hits": 53, "sog": 3, "cup": false },
     { "year": "S10", "games": 13, "goals": 14, "assists": 8, "points": 22, "hits": 204, "sog": 52, "cup": false },
-    { "year": "S13", "games": 2, "goals": 2, "assists": 0, "points": 2, "hits": 43, "sog": 14, "cup": false }
+    { "year": "S13", "games": 2, "goals": 2, "assists": 0, "points": 2, "hits": 43, "sog": 14, "cup": false },
+    { "year": "S14", "games": 23, "goals": 11, "assists": 18, "points": 29, "hits": 572, "sog": 60, "cup": false },
+    { "year": "S15", "games": 26, "goals": 18, "assists": 28, "points": 46, "hits": 613, "sog": 80, "cup": false },
+    { "year": "S16", "games": 20, "goals": 7, "assists": 17, "points": 24, "hits": 384, "sog": 77, "cup": false },
+    { "year": "S17", "games": 26, "goals": 18, "assists": 25, "points": 43, "hits": 490, "sog": 68, "cup": false },
+    { "year": "S18", "games": 15, "goals": 2, "assists": 3, "points": 5, "hits": 164, "sog": 25, "cup": false },
+    { "year": "S19", "games": 17, "goals": 21, "assists": 7, "points": 28, "hits": 282, "sog": 59, "cup": false },
+    { "year": "S20", "games": 16, "goals": 10, "assists": 6, "points": 16, "hits": 216, "sog": 48, "cup": false },
+    { "year": "S21", "games": 22, "goals": 14, "assists": 13, "points": 27, "hits": 427, "sog": 64, "cup": false },
+    { "year": "S22", "games": 21, "goals": 18, "assists": 15, "points": 33, "hits": 272, "sog": 80, "cup": false },
+    { "year": "S23", "games": 18, "goals": 13, "assists": 11, "points": 24, "hits": 305, "sog": 82, "cup": false },
+    { "year": "S24", "games": 17, "goals": 9, "assists": 17, "points": 26, "hits": 268, "sog": 46, "cup": false },
+    { "year": "S25", "games": 19, "goals": 15, "assists": 13, "points": 28, "hits": 316, "sog": 71, "cup": true }
   ]
 },
   {
