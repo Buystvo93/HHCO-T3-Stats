@@ -339,6 +339,9 @@
       { "year": "S23", "games": 6, "goals": 4, "assists": 4, "points": 8, "hits": 119, "sog": 37, "cup": false },
       { "year": "S24", "games": 11, "goals": 3, "assists": 4, "points": 7, "hits": 180, "sog": 28, "cup": false },
       { "year": "S25", "games": 17, "goals": 7, "assists": 20, "points": 27, "hits": 287, "sog": 43, "cup": false }
+    ],
+    "awards": [
+      "S22 DPOTY"
     ]
   },
   {
