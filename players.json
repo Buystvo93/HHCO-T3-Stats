@@ -426,6 +426,11 @@
     ],
     "goalieSeasons": [
       { "year": "S25", "games": 1, "win": 0, "loss": 0, "OTL": 0, "Shot Faced": 2, "Saves": 1, "Shutout": 0 }
+    ],
+    "awards": [
+      "S24 TWOTY",
+      "S16 ROTY",
+      "S20 MIP"
     ]
   },
   {
