@@ -221,6 +221,14 @@
     "goalieSeasons": [
         { "year": "S16", "games": 31, "win": 30, "loss": 0, "OTL": 0, "Shot Faced": 546, "Saves": 489, "Shutout": 4 },
         { "year": "S24", "games": 1, "win": 0, "loss": 0, "OTL": 0, "Shot Faced": 4, "Saves": 3, "Shutout": 0 }
+    ],
+    "awards": [
+      "S8 MVP",
+      "S3 FOTY",
+      "S8 FOTY",
+      "S6 TWOTY",
+      "S9 COTY",
+      "S9 GOTY"
     ]
 },
 
