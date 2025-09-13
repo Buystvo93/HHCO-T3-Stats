@@ -283,6 +283,9 @@
       { "year": "S23", "games": 9, "goals": 2, "assists": 1, "points": 3, "hits": 112, "sog": 13, "cup": false },
       { "year": "S24", "games": 8, "goals": 2, "assists": 2, "points": 4, "hits": 80, "sog": 12, "cup": false },
       { "year": "S25", "games": 14, "goals": 5, "assists": 0, "points": 5, "hits": 173, "sog": 26, "cup": false }
+    ],
+    "awards": [
+      "S13 ROTY"
     ]
   },
   
