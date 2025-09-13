@@ -118,6 +118,26 @@
       background: gold !important;
       font-weight: bold;
     }
+
+    /* 🔹 Awards Section */
+    .awards-section {
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .awards-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .awards-list li {
+      background: #eaf3ff;
+      border-left: 6px solid #0078d7;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -148,6 +168,12 @@
       <thead></thead>
       <tbody></tbody>
     </table>
+
+    <!-- 🔹 Awards Section -->
+    <div id="awardsSection" class="awards-section" style="display:none;">
+      <h2>Awards</h2>
+      <ul id="awardsList" class="awards-list"></ul>
+    </div>
   </div>
 
   <script>
@@ -181,6 +207,19 @@
         // Goalie stats
         if (player.goalieSeasons && player.goalieSeasons.length > 0) {
           buildTable(player.goalieSeasons, "goalieStatsTable");
+        }
+
+        // Awards
+        if (player.awards && player.awards.length > 0) {
+          const awardsSection = document.getElementById("awardsSection");
+          const awardsList = document.getElementById("awardsList");
+          awardsSection.style.display = "block";
+          awardsList.innerHTML = "";
+          player.awards.forEach(award => {
+            const li = document.createElement("li");
+            li.textContent = award;
+            awardsList.appendChild(li);
+          });
         }
 
       } catch (err) {
