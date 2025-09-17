@@ -66,5 +66,13 @@
     "seasons": [
       { "year": "S5", "games": 1, "goals": 1, "assists": 0, "points": 1, "hits": 11, "sog": 1, "pen": 1, "dp": 0, "cup": false }
     ]
+  },
+  {
+    "id": "1781929999",
+    "name": "Bradyswrld2",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-1C09DC58191945DCAB566218AC5D4205-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 1, "goals": 1, "assists": 0, "points": 1, "hits": 5, "sog": 3, "pen": 0, "dp": 0, "cup": false }
+    ]
   }
 ]
