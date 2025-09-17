@@ -32,7 +32,10 @@
     "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-5C8948D6B513BFF2FAE19879032DC5ED-Png/150/150/AvatarHeadshot/Webp/noFilter",
     "seasons": [
       { "year": "S5", "games": 12, "goals": 7, "assists": 10, "points": 17, "hits": 193, "sog": 53, "pen": 4, "dp": 10, "cup": false }
-    ]
+    ],
+   "goalieSeasons": [
+     { "year": "S5", "games": 3, "wins": 0, "losses": 0, "otl": 0, "shutouts": 0, "saves": 0, "shot faced": 0 }
+   ]
   },
   {
     "id": "95445045",
@@ -40,7 +43,10 @@
     "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-71F6699A6A2FEF58BD0D0684BBD88E0B-Png/150/150/AvatarHeadshot/Webp/noFilter",
     "seasons": [
       { "year": "S5", "games": 8, "goals": 7, "assists": 4, "points": 11, "hits": 32, "sog": 26, "pen": 0, "dp": 2, "cup": false }
-    ]
+    ],
+   "goalieSeasons": [
+     { "year": "S5", "games": 1, "wins": 0, "losses": 0, "otl": 0, "shutouts": 0, "saves": 0, "shot faced": 0 }
+   ]
   },
   {
     "id": "76325696",
@@ -48,7 +54,10 @@
     "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-D959C925804F3AC23DA2068A1E2622D4-Png/150/150/AvatarHeadshot/Webp/noFilter",
     "seasons": [
       { "year": "S5", "games": 15, "goals": 0, "assists": 6, "points": 6, "hits": 118, "sog": 19, "pen": 4, "dp": 0, "cup": false }
-    ]
+    ],
+   "goalieSeasons": [
+     { "year": "S5", "games": 4, "wins": 1, "losses": 0, "otl": 0, "shutouts": 0, "saves": 33, "shot faced": 38 }
+   ]
   },
   {
     "id": "8707710734",
