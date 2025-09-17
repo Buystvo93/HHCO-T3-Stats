@@ -106,5 +106,13 @@
     "goalieSeasons": [
      { "year": "S5", "games": 2, "wins": 0, "losses": 1, "otl": 0, "shutouts": 0, "saves": 16, "shot faced": 21 }
    ]
+  },
+  {
+    "id": "69921119",
+    "name": "grt445",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-885026DD39AE75B5541375E05FFDD726-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 14, "goals": 4, "assists": 11, "points": 15, "hits": 252, "sog": 63, "pen": 6, "dp": 10, "cup": false }
+    ]
   }
 ]
