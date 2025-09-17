@@ -13,7 +13,10 @@
     "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-68FC5287E919AC7666310FC8D15171C9-Png/150/150/AvatarHeadshot/Webp/noFilter",
     "seasons": [
       { "year": "S5", "games": 16, "goals": 22, "assists": 11, "points": 33, "hits": 164, "sog": 67, "pen": 7, "dp": 11, "cup": false }
-    ]
+    ],
+   "goalieSeasons": [
+     { "year": "S5", "games": 7, "wins": 1, "losses": 1, "otl": 0, "shutouts": 0, "saves": 44, "shot faced": 53 }
+   ]
   },
   {
     "id": "1727477392",
@@ -21,6 +24,46 @@
     "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-7A01574185C5CCCE3793B38F78AA28E7-Png/150/150/AvatarHeadshot/Webp/noFilter",
     "seasons": [
       { "year": "S5", "games": 13, "goals": 14, "assists": 4, "points": 18, "hits": 220, "sog": 85, "pen": 13, "dp": 11, "cup": false }
+    ]
+  },
+  {
+    "id": "192045102",
+    "name": "mistakencave",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-5C8948D6B513BFF2FAE19879032DC5ED-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 12, "goals": 7, "assists": 10, "points": 17, "hits": 193, "sog": 53, "pen": 4, "dp": 10, "cup": false }
+    ]
+  },
+  {
+    "id": "95445045",
+    "name": "TheJediGamer08",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-71F6699A6A2FEF58BD0D0684BBD88E0B-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 8, "goals": 7, "assists": 4, "points": 11, "hits": 32, "sog": 26, "pen": 0, "dp": 2, "cup": false }
+    ]
+  },
+  {
+    "id": "76325696",
+    "name": "Awesomesaucecrap",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-D959C925804F3AC23DA2068A1E2622D4-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 15, "goals": 0, "assists": 6, "points": 6, "hits": 118, "sog": 19, "pen": 4, "dp": 0, "cup": false }
+    ]
+  },
+  {
+    "id": "8707710734",
+    "name": "SpIashv1",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-B8D0CD7D3686FB6F74342DF497695029-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 1, "goals": 1, "assists": 0, "points": 1, "hits": 11, "sog": 1, "pen": 1, "dp": 0, "cup": false }
+    ]
+  }
+  {
+    "id": "8707710734",
+    "name": "SpIashv1",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-B8D0CD7D3686FB6F74342DF497695029-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 1, "goals": 1, "assists": 0, "points": 1, "hits": 11, "sog": 1, "pen": 1, "dp": 0, "cup": false }
     ]
   }
 ]
