@@ -82,5 +82,21 @@
     "seasons": [
       { "year": "S5", "games": 2, "goals": 0, "assists": 0, "points": 0, "hits": 26, "sog": 1, "pen": 1, "dp": 1, "cup": false }
     ]
+  },
+  {
+    "id": "540691681",
+    "name": "LordPokoh",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-0ACD48F8FEDC88C6281879D9121D9C8A-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 6, "goals": 0, "assists": 0, "points": 0, "hits": 32, "sog": 3, "pen": 2, "dp": 2, "cup": false }
+    ]
+  },
+  {
+    "id": "350092446",
+    "name": "loosepocket285",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-2CC5D7F2E92A085EA632C3F3EB7C6504-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "goalieSeasons": [
+     { "year": "S5", "games": 4, "wins": 1, "losses": 1, "otl": 0, "shutouts": 0, "saves": 16, "shot faced": 26 }
+   ]
   }
 ]
