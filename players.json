@@ -1,3 +1,4 @@
+{ 
  {
     "id": "218955237",
     "name": "slonqxr",
@@ -5,4 +6,13 @@
     "seasons": [
       { "year": "S5", "games": 17, "goals": 19, "assists": 15, "points": 34, "hits": 415, "sog": 123, "pen": 10, "dp": 10, "cup": false }
     ]
+  },
+ {
+    "id": "75013743",
+    "name": "f7mous",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-68FC5287E919AC7666310FC8D15171C9-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 16, "goals": 22, "assists": 11, "points": 33, "hits": 164, "sog": 67, "pen": 7, "dp": 11, "cup": false }
+    ]
   }
+}
