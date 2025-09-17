@@ -114,5 +114,13 @@
     "seasons": [
       { "year": "S5", "games": 14, "goals": 4, "assists": 11, "points": 15, "hits": 252, "sog": 63, "pen": 6, "dp": 10, "cup": false }
     ]
+  },
+  {
+    "id": "905251703",
+    "name": "hockeybob8",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-7D8805E6E3C55955664094293BDB8A14-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 14, "goals": 8, "assists": 6, "points": 14, "hits": 198, "sog": 64, "pen": 6, "dp": 14, "cup": false }
+    ]
   }
 ]
