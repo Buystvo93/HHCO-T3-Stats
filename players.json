@@ -1,5 +1,5 @@
-{ 
- {
+[ 
+  {
     "id": "218955237",
     "name": "slonqxr",
     "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-6F2ECE75D3D40324582C04B908FCAE58-Png/150/150/AvatarHeadshot/Webp/noFilter",
@@ -15,4 +15,4 @@
       { "year": "S5", "games": 16, "goals": 22, "assists": 11, "points": 33, "hits": 164, "sog": 67, "pen": 7, "dp": 11, "cup": false }
     ]
   }
-}
+]
