@@ -74,5 +74,13 @@
     "seasons": [
       { "year": "S5", "games": 1, "goals": 1, "assists": 0, "points": 1, "hits": 5, "sog": 3, "pen": 0, "dp": 0, "cup": false }
     ]
+  },
+  {
+    "id": "97594568",
+    "name": "Slownights",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-9F23383825E5D904DA86EE42B31FB784-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 2, "goals": 0, "assists": 0, "points": 0, "hits": 26, "sog": 1, "pen": 1, "dp": 1, "cup": false }
+    ]
   }
 ]
