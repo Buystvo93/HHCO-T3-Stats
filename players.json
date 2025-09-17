@@ -14,5 +14,13 @@
     "seasons": [
       { "year": "S5", "games": 16, "goals": 22, "assists": 11, "points": 33, "hits": 164, "sog": 67, "pen": 7, "dp": 11, "cup": false }
     ]
+  },
+  {
+    "id": "1727477392",
+    "name": "xelasee",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-7A01574185C5CCCE3793B38F78AA28E7-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 13, "goals": 14, "assists": 4, "points": 18, "hits": 220, "sog": 85, "pen": 13, "dp": 11, "cup": false }
+    ]
   }
 ]
