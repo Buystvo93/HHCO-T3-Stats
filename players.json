@@ -5,4 +5,4 @@
     "seasons": [
       { "year": "S5", "games": 17, "goals": 19, "assists": 15, "points": 34, "hits": 415, "sog": 123, "pen": 10, "dp": 10, "cup": false }
     ]
-  },
+  }
