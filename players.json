@@ -98,5 +98,13 @@
     "goalieSeasons": [
      { "year": "S5", "games": 4, "wins": 1, "losses": 1, "otl": 0, "shutouts": 0, "saves": 16, "shot faced": 26 }
    ]
+  },
+  {
+    "id": "1179896449",
+    "name": "Mysterable",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-CA60739E297C5458C290DD6A3DDBC460-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "goalieSeasons": [
+     { "year": "S5", "games": 2, "wins": 0, "losses": 1, "otl": 0, "shutouts": 0, "saves": 16, "shot faced": 21 }
+   ]
   }
 ]
