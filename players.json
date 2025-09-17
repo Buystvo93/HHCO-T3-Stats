@@ -58,12 +58,4 @@
       { "year": "S5", "games": 1, "goals": 1, "assists": 0, "points": 1, "hits": 11, "sog": 1, "pen": 1, "dp": 0, "cup": false }
     ]
   }
-  {
-    "id": "8707710734",
-    "name": "SpIashv1",
-    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-B8D0CD7D3686FB6F74342DF497695029-Png/150/150/AvatarHeadshot/Webp/noFilter",
-    "seasons": [
-      { "year": "S5", "games": 1, "goals": 1, "assists": 0, "points": 1, "hits": 11, "sog": 1, "pen": 1, "dp": 0, "cup": false }
-    ]
-  }
 ]
