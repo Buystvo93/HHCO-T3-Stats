@@ -134,5 +134,13 @@
       { "url": "wCcMTpZMBPhpEIXAZ9JoxZ8.mp4", "desc": "TheMightyBacon_9 Clip 1" },
       { "url": "VmWOwf3jG0ONEIe8mI6nXCY.mp4", "desc": "TheMightyBacon_9 Clip 2" }
     ]
+  },
+  {
+    "id": "185038967",
+    "name": "ComplexDreamer",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-6B9F544FA72DB5FB4E8DC7E222FB0757-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 8, "goals": 6, "assists": 7, "points": 13, "hits": 83, "sog": 33, "pen": 4, "dp": 6, "cup": false }
+    ]
   }
 ]
