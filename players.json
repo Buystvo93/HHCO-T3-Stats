@@ -122,5 +122,16 @@
     "seasons": [
       { "year": "S5", "games": 14, "goals": 8, "assists": 6, "points": 14, "hits": 198, "sog": 64, "pen": 6, "dp": 14, "cup": false }
     ]
+  },
+  {
+    "id": "5242558016",
+    "name": "TheMightyBacon_9",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-324CAC0CD00A880DD5BADBE5DD50F079-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 3, "goals": 1, "assists": 1, "points": 2, "hits": 19, "sog": 6, "pen": 0, "dp": 3, "cup": false }
+    ],
+    "clips": [
+      { "url": , "desc": "TheMightyBacon_9 Clip 1" }
+    ]
   }
 ]
