@@ -142,5 +142,13 @@
     "seasons": [
       { "year": "S5", "games": 8, "goals": 6, "assists": 7, "points": 13, "hits": 83, "sog": 33, "pen": 4, "dp": 6, "cup": false }
     ]
+  },
+  {
+    "id": "1505927709",
+    "name": "Azotik",
+    "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-A5CEF837F4A46EAB86B37D734A0A1562-Png/150/150/AvatarHeadshot/Webp/noFilter",
+    "seasons": [
+      { "year": "S5", "games": 9, "goals": 6, "assists": 4, "points": 10, "hits": 136, "sog": 39, "pen": 6, "dp": 3, "cup": false }
+    ]
   }
 ]
