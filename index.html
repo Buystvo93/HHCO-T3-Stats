@@ -13,7 +13,7 @@
       color: #333;
     }
 
-    /* 🔵 Navigation bar at the very top */
+   
     nav {
       background: #0078d7;
       color: white;
@@ -22,7 +22,7 @@
       justify-content: space-between;
       padding: 12px 20px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      position: fixed;   /* stays at top */
+      position: fixed;  
       top: 0;
       left: 0;
       right: 0;
@@ -44,7 +44,7 @@
       font-weight: bold;
     }
 
-    /* 🔍 Search bar inside nav */
+
     #searchInput {
       padding: 8px 12px;
       font-size: 15px;
@@ -59,12 +59,12 @@
       box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
     }
 
-    /* 📋 Player List */
+    
     #playerList {
       list-style-type: none;
       padding: 20px;
       max-width: 700px;
-      margin: 100px auto 20px; /* push list below fixed navbar */
+      margin: 100px auto 20px; 
     }
 
     #playerList li {
@@ -92,7 +92,7 @@
   </style>
 </head>
 <body>
-  <!-- 🔵 Navigation Bar -->
+ 
   <nav>
     <div class="nav-left">
       <img src="images/logo.png" alt="Logo" class="logo">
@@ -101,7 +101,7 @@
     <input type="text" id="searchInput" placeholder="Search players...">
   </nav>
 
-  <!-- 📋 Player List -->
+
   <ul id="playerList"></ul>
 
   <script>
@@ -123,7 +123,7 @@
       });
     }
 
-    // 🔍 Search feature
+ 
     document.getElementById("searchInput").addEventListener("input", (e) => {
       const query = e.target.value.toLowerCase();
       const filtered = playersData.filter(player =>
